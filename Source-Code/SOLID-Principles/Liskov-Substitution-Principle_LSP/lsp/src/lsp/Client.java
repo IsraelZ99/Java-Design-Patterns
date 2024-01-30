@@ -13,13 +13,13 @@ public class Client {
         GuestUserPayment guestUser1 = new GuestUserPayment();
 
         // Consolidating the previous payment's info to the helper
-        helper.addPreviousPayment(robin);
-        helper.addPreviousPayment(jack);
+        helper.addPreviousPayment(robin); // Here LSP is implemented
+        helper.addPreviousPayment(jack); // Here LSP is implemented
 
         // Consolidating new payment request to the helper
-        helper.addNewPayment(robin);
-        helper.addNewPayment(jack);
-        helper.addNewPayment(guestUser1);
+        helper.addNewPayment(robin); // Here LSP is implemented
+        helper.addNewPayment(jack); // Here LSP is implemented
+        helper.addNewPayment(guestUser1); // Here LSP is implemented
 
         // Retrieve all the previous payments of registered users.
         helper.showPreviousPayments();
